@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+
+    >
+    <ImageView
+        android:id="@+id/picRand"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/punch"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/punch"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        />
+    <Button
+        android:id="@+id/cut"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/cut"
+        android:layout_centerVertical="true"
+        />
+    <Button
+        android:id="@+id/paper"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/paper"
+        android:layout_toRightOf="@id/punch"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SampleName"
+        />
+    <TextView
+        android:id="@+id/win"
+        android:textColor="#99CC00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Win: 0"
+        android:layout_below="@id/name"
+        />
+    <TextView
+        android:id="@+id/draw"
+        android:textColor="#FFBB33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Draw: 0"
+        android:layout_below="@id/win"
+        />
+    <TextView
+        android:id="@+id/lose"
+        android:textColor="#AA66CC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lose: 0"
+        android:layout_below="@id/draw"
+        />
+
+    <com.jongzazaal.game.PieGraph
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/graph"
+        android:layout_below="@id/punch"
+        />
+
+
+</RelativeLayout>
